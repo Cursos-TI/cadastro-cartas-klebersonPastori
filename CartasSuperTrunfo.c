@@ -95,5 +95,14 @@ int main() {
   printf("PIB per Capita: Carta %d venceu (%d)\n", pibPerCapita > pibPerCapita1 ? 1 : 2, pibPerCapita > pibPerCapita1 ? 1 : 0);
   printf("Super Poder: Carta %d venceu (%d)\n", superPoderA > superPoderB ? 1 : 2, superPoderA > superPoderB ? 1 : 0);
 
+
+  printf("\nNa comparação de pontos turísticos:\n");
+  if (pontosTuristicos > pontosTuristicos1) {
+    printf("\nCarta A venceu essa rodada!\n");
+  } else if (pontosTuristicos < pontosTuristicos1) {
+    printf("\nCarta B venceu essa rodada!\n");
+  } else {
+    printf("\nEmpate! Ambas as cartas têm o mesmo número de pontos turísticos.\n");
+  }
   return 0;
 }
